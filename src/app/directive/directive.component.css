@@ -1,0 +1,17 @@
+.paris{
+    width: 400px;
+    height: 400px;
+    border-radius: 8px;
+    background-image: url("https://cache-graphicslib.viator.com/graphicslib/thumbs360x240/7845/SITours/eiffel-tower-priority-access-ticket-with-host-in-paris-299567.jpg");
+    background-repeat:no-repeat;
+    
+    }
+    
+    .london{
+    width: 400px;
+    height: 400px;
+    border-radius: 8px;
+    background-image: url("http://www.hoganlovells.com/~/media/hogan-lovells/images/locations/london.jpg");
+    background-repeat:no-repeat;
+    
+    }

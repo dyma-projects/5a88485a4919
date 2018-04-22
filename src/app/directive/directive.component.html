@@ -1,0 +1,39 @@
+<p *ngIf="status">p1</p>
+<p *ngIf="!status">p2</p>
+<button (click)="status=!status">Switch</button>
+
+<hr>
+
+<ul>
+  <li *ngFor="let text of texts">{{ text.mot }}</li>
+</ul>
+
+<hr>
+<h2>Exemple 1 =>ngClass</h2>
+<p>Afficher paris ou london </p>
+<input type="text" [(ngModel)]="backgroundImage" placeholder="paris ou london ?">
+<div [ngClass]="{
+      paris: backgroundImage === 'paris',
+      london: backgroundImage === 'london'
+      }">
+
+</div>
+<div>
+  <h2>Exemple 2 =>ngFor</h2>
+  <p>La liste des véhicules</p>
+
+  <ul>
+    <li *ngFor ="let voiture of voitures" class="list-group-item list-group-item-action">{{ voiture.name }}</li>
+  </ul>
+</div>
+<div>
+  <h2>Exemple 3 =>liaison d'évènements</h2>
+<p>Changer les lignes de couleur</p>
+<ul>
+  <li *ngFor ="let voiture of voitures" class="list-group-item list-group-item-action"
+  [style.backgroundColor]="color" 
+  (click)="changeColor('orange')"
+  (mouseenter)="changeColor('pink')"
+  >{{ voiture.name }}</li>
+</ul> 
+</div>
